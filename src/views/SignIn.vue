@@ -42,7 +42,7 @@ export default {
             };
 
             console.log(body);
-            await axios.post(`${this.baseURL}user/signIn`, body)
+            await axios.post(`${this.baseURL}user/signin`, body)
             .then((res) => {
                 localStorage.setItem("token", res.data.token);
                 swal({

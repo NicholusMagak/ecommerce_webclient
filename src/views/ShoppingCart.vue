@@ -68,7 +68,7 @@ export default {
     methods: {
         //fetching all item to view in cart
         listCartItems() {
-            axios.get(`${this.baseURL}cart/?token=${this.token}`)
+            axios.get(`${this.baseURL}cart/getCartElements/?token=${this.token}`)
             .then((res) => {
                 const result = res.data;
                 this.cartItems = result.cartItems;

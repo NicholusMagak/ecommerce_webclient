@@ -25,11 +25,12 @@ export default {
         return {
             id: null,
             category: {},
+            product: {},
             msg: ''
         }
     },
 
-    props: ["categories"],
+    props: ["categories", "products"],
 
     mounted() {
         this.id = this.$route.params.id;

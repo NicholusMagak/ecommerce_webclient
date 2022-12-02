@@ -30,7 +30,8 @@ export default {
   components: {Navbar, Footer},
   data() {
     return{
-      baseURL: "https://limitless-lake-55070.herokuapp.com/",
+      // baseURL: "https://limitless-lake-55070.herokuapp.com/",
+      baseURL: 'http://localhost:8080/',
       products: [],
       categories: null,
       cartCount: 0,
