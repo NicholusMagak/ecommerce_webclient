@@ -13,6 +13,9 @@ import SignUp from '../views/SignUp.vue';
 import SignIn from '../views/SignIn.vue';
 import WishList from '../views/Product/WishList.vue';
 import ShoppingCart from '../views/ShoppingCart.vue';
+import Failed from '../views/payment/Failed.vue';
+import Success from '../views/payment/Success.vue';
+import Checkout from '../views/Checkout/CheckOut.vue';
 
 const routes = [
   {
@@ -102,6 +105,27 @@ const routes = [
     path: '/cart',
     name: 'ShoppingCart',
     component: ShoppingCart
+  },
+
+  // failed purchase page
+  {
+    path: '/payment/failed',
+    name: 'PaymentFailed',
+    component: Failed
+  },
+
+  // successful purchase page
+  {
+    path: '/payment/success',
+    name: 'PaymentSuccess',
+    component: Success
+  },
+
+  // checkout page
+  {
+    path: '/checkout',
+    name: 'CheckOut',
+    component: Checkout
   }
 ]
 

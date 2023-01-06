@@ -97,7 +97,7 @@ export default {
                 return;
             }
 
-            axios.post(`${this.baseURL}cart/add?token=${this.token}`, {
+            axios.post(`${this.baseURL}cart/addToCart?token=${this.token}`, {
                 productId: this.id,
                 quantity: this.quantity
             }).then((res) => {

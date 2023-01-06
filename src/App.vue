@@ -54,7 +54,7 @@ export default {
 
       // api call for the cart items if person is logged in
       if(this.token) {
-        axios.get(`${this.baseURL}cart/?token=${this.token}`)
+        axios.get(`${this.baseURL}cart/getCartElements/?token=${this.token}`)
             .then((res) => {
                 const result = res.data;
                 this.cartCount = result.cartItems.length;
